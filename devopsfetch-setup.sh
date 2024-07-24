@@ -13,7 +13,7 @@ apt install -y net-tools docker.io nginx logrotate
 
 # Create the monitoring script
 echo "Creating the monitoring script..."
-cp devopsfetch /usr/local/bin/devopsfetch
+cp devopsfetch.sh /usr/local/bin/devopsfetch
 chmod +x /usr/local/bin/devopsfetch
 #!/bin/bash
 

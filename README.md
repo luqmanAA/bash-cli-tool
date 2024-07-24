@@ -18,8 +18,8 @@ journalctl for log activities
 Using this tool requires that some dependcies are installed to ensure that the tool works well. Run the `devopsfetch-setup.sh` script to get started.
 
 ```bash
-sudo chmod +x devopsfetch-setup
-sudo devopsfetch-setup
+sudo chmod +x devopsfetch-setup.sh
+sudo ./devopsfetch-setup.sh
 ```
 
 This installs all the required dependencies.
