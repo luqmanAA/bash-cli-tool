@@ -24,16 +24,16 @@ log_message() {
     echo "$(date): $@" >> $LOGFILE
 }
 
-# Continuous monitoring mode
-while true; do
-    log_message "Checking system status..."
-    # Add your monitoring commands here, e.g., checking active ports
-    netstat -tulnp >> $LOGFILE 2>&1
-    docker ps >> $LOGFILE 2>&1
-    nginx -T >> $LOGFILE 2>&1
-    sleep 300
-done
-EOF
+# # Continuous monitoring mode
+# while true; do
+#     log_message "Checking system status..."
+#     # Add your monitoring commands here, e.g., checking active ports
+#     netstat -tulnp >> $LOGFILE 2>&1
+#     docker ps >> $LOGFILE 2>&1
+#     nginx -T >> $LOGFILE 2>&1
+#     sleep 300
+# done
+# EOF
 
 chmod +x /usr/local/bin/devopsfetch
 
